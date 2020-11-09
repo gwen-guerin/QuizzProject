@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <link href="quizz.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"></link>
+    
+    <title>Quizz</title>
+</head> 
+
+<body>
+    <header id="header"> 
+        <div id="titre">LUCKY'S QUIZZ</div>
+    </header>
+
+    
+    
+    <div id="quiz" >       
+        
+        <div id="question">Loading...</div>
+        
+        <div class="answer" id="un">
+            
+            <div class="containerAnswer" id="reponse0" data-indice="1">
+                <input type="radio" name="question-1-answers" id="question1reponseA" value="A" />
+                <label class="reponse" for="question1reponseA">Canberra </label>
+            </div>
+            <div class="containerAnswer" id="reponse1"data-indice="2">
+                <input type="radio" name="question-1-answers" id="question1reponseB" value="B" />
+                <label class="reponse" for="question1reponseB">Talinn </label>
+            </div>
+            <div class="containerAnswer" id="reponse2" data-indice="3">
+                <input type="radio" name="question-1-answers" id="question1reponseC" value="C" />
+                <label class="reponse" for="question1reponseC">Riga </label>
+            </div>
+            <div class="containerAnswer" id="reponse3" data-indice="4">
+                <input type="radio" name="question-1-answers" id="question1reponseD" value="D" />
+                <label class="reponse" for="question1reponseD">Varsovie </label>
+            </div>
+            
+            <button id="next">Next !</button>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="text-center" id="exampleModalLabel">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-award" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l-1.51-.229L8 1.126l-1.355.702-1.51.229-.684 1.365-1.086 1.072L3.614 6l-.25 1.506 1.087 1.072.684 1.365 1.51.229L8 10.874l1.356-.702 1.509-.229.684-1.365 1.086-1.072L12.387 6l.248-1.506-1.086-1.072-.684-1.365z"/>
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                          </svg> Félicitations ! </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ... 
+                    </div>
+                    <div id="modal-body"><b>Le quizz est terminé !</b> </br>
+                    Sur ..... de questions tu as ...... de bonnes réponses !
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="quizz.js"></script>
+    
+    
+</body>
+</html>
